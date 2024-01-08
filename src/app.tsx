@@ -9,16 +9,16 @@ import { createGlobalState, GlobalProvider } from "./Global/global";
 export default function App() {
   const global = createGlobalState();
   return (
-    <Router
-      root={(props) => (
-        <>
-          <Suspense>{props.children}</Suspense>
-        </>
-      )}
-    >
-      <GlobalProvider value={global}>
+    <GlobalProvider value={global}>
+      <Router
+        root={(props) => (
+          <>
+            <Suspense>{props.children}</Suspense>
+          </>
+        )}
+      >
         <FileRoutes />
-      </GlobalProvider>
-    </Router>
+      </Router>
+    </GlobalProvider>
   );
 }
