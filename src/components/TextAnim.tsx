@@ -4,7 +4,7 @@ import { useGlobal } from "~/Global/global";
 
 interface Props {
   text: string;
-  phase: string;
+  phase?: string;
 }
 
 export default function TextAnim(props: Props) {

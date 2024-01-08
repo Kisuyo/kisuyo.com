@@ -7,10 +7,9 @@ export default function Intro() {
         <TextAnim text="My name is Igor Voloboev" phase="Intro"></TextAnim>
       </div>
       <div class="animate-TextSlide text-[14px] text-[#afafaf86] w-1/2 text-center">
-        As a backend developer skilled in Rust and GraphQL, I bring alot of
-        knowledge towards that area. In addition to my proficiency in backend, I
-        have learnt front-end development, having designed and maintained my own
-        websites.
+        As a front-end developer skilled in Tailwind and Solidjs. I bring alot
+        of Knowledge towards that area. In addition to my proficiency in
+        front-end ive learnt parts of back-end like sql and graphql.
       </div>
     </div>
   );
