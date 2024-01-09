@@ -17,7 +17,11 @@ export default function Projects() {
           }}
         >
           <div class="h-[400px] w-1/2 bg-black">
-            <img src="../../public/logo.jpg" alt="" />
+            <img
+              src="../../public/logo.jpg"
+              alt=""
+              class="w-[300px] h-[300px] flex-center"
+            />
           </div>
           <div class="p-[20px] w-1/2 flex items-center flex-col">
             <div class="font-bold text-[1.5rem] w-full flex-center">KusKus</div>
