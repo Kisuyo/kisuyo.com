@@ -4,9 +4,9 @@ export default function Home() {
   return (
     <main className="relative min-h-screen">
       <RepelGridBackground>
-        <div className="flex min-h-screen flex-col justify-center items-center text-start text-white nohemi text-[42px] md:text-[62px] tracking-[0.08em]">
+        <div className="flex min-h-screen px-[20px] flex-col justify-center items-center text-start text-white nohemi text-[42px] md:text-[62px] tracking-[0.08em]">
           <h1>Hey, I'm Igor</h1>
-          <p className="text-sm">
+          <p className="text-sm text-center">
             I am a full stack software developer and game developer
           </p>
         </div>
