@@ -1,14 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+import type { CSSProperties } from "react";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-poppins",
-  display: "swap",
-});
+import { GoogleFontsProvider, themeCssVariables } from "@/theme";
 
 export const metadata: Metadata = {
   title: "kisuyo",
@@ -42,10 +35,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} ${poppins.variable}`}>
-        {children}
-      </body>
+    <html lang="en" style={themeCssVariables as CSSProperties}>
+      <GoogleFontsProvider>{children}</GoogleFontsProvider>
     </html>
   );
 }
